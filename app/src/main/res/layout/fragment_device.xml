@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/device"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgLogo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnrDeviceModel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceModelValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider01"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceModelName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="مدل"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgDeviceModel"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_device_model"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDeviceBrand"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceBrandValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider02"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceBrandName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="برند"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDeviceBrand"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_device_brand"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDeviceBoard"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceBoardValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider03"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceBoardName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="برد"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDeviceBoard"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_device_board"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDeviceSerial"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceSerialValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider04"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceSerialName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="سریال دستگاه"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDeviceSerial"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_device_serial"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDeviceIMEI"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceIMEIValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider05"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceIMEIName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="شماره سریال دستگاه"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDeviceIMEI"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_device_imei"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrPhonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtPhonenumberValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider06"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtPhonenumberName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="شماره تلفن"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemPhonenumber"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_phone_number"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDeviceRoot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceRootValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider07"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeviceRootName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="دسترسی روت"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDeviceRoot"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_device_root"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

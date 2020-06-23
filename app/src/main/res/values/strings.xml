@@ -1,0 +1,498 @@
+<resources>
+    <string name="app_name">DeviceMonitor</string>
+    <string name="os_information">سیستم عامل</string>
+    <string name="device_information">دستگاه</string>
+    <string name="memory_information">مموری</string>
+    <string name="wifi_information">وای فای</string>
+    <string name="battery_information">باطری</string>
+    <string name="screen_information">صفحه نمایش</string>
+
+    // device network accessory
+    <string name="device">Device</string>
+    <string name="network">Network</string>
+    <string name="accessory">Accessories</string>
+
+    // chipset
+    <string name="chipset_info">Chipset</string>
+    // cpu
+    <string name="cpu_info">CPU</string>
+    <string name="cpu_model">Chip Model</string>
+    <string name="asus_nexus7_cpu">Qualcomm Snapdragon s4 Pro Quad-core 1.5 GHz Krait</string>
+    <string name="exynos5260" translatable="false">Hexa-core Exynos 5260</string>
+    <string name="exynos5260cls" translatable="false">1.7 GHz dual-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="exynos5420" translatable="false">Octa-core Exynos 5420</string>
+    <string name="exynos5420cls" translatable="false">1.9 GHz quad-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="exynos5422" translatable="false">Octa-core Exynos 5422</string>
+    <string name="exynos5422cls" translatable="false">1.9 GHz quad-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="exynos5430" translatable="false">Octa-core Exynos 5430</string>
+    <string name="exynos5430cls" translatable="false">1.8 GHz quad-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="exynos5433" translatable="false">Octa-core Exynos 5433</string>
+    <string name="exynos5433cls" translatable="false">1.9 GHz quad-core Cortex-A57 and 1.3 GHz quad-core Cortex-A53</string>
+    <string name="exynos7420" translatable="false">Octa-core Exynos 7420</string>
+    <string name="exynos7420cls" translatable="false">2.1 GHz quad-core Cortex-A57 and 1.5 GHz quad-core Cortex-A53</string>
+    <string name="exynos8890" translatable="false">Octa-core Exynos 8890</string>
+    <string name="exynos8890cls" translatable="false">2.3 GHz quad-core Mongoose and 1.6 GHz quad-core Cortex-A53</string>
+    <string name="lenovo_lenovoa6000_cpu" translatable="false">Qualcomm Snapdragon 410 Quad-core 1.2 GHz</string>
+    <string name="lge_lgd800_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.26 GHz Krait 400</string>
+    <string name="lge_lgd802_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.26 GHz Krait 400</string>
+    <string name="lge_lgd802t_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.26 GHz Krait 400</string>
+    <string name="lge_lgd855_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.5 GHz Krait 400</string>
+    <string name="lge_nexus5_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.3 GHz Krait 400</string>
+    <string name="motorola_motoe24gl_cf" translatable="false">0.3</string>
+    <string name="motorola_motoe24gl_cpu" translatable="false">Qualcomm Snapdragon 410 with 1.2 GHz Quad-core</string>
+    <string name="motorola_motoe2_cf" translatable="false">0.3</string>
+    <string name="motorola_motoe2_cpu" translatable="false">Qualcomm Snapdragon 200 with 1.2 GHz Quad-core</string>
+    <string name="motorola_motoe_cpu" translatable="false">Qualcomm Snapdragon 200 with 1.2 GHz dual-core</string>
+    <string name="motorola_motog2014_cf" translatable="false">2</string>
+    <string name="motorola_motog2014_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_motog3_cf" translatable="false">5</string>
+    <string name="motorola_motog3_cpu" translatable="false">Qualcomm Snapdragon 410 64-bit Quad-core 1.4 GHz</string>
+    <string name="motorola_motog_cf" translatable="false">1.3</string>
+    <string name="motorola_motog_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_nexus6_cf" translatable="false">2</string>
+    <string name="motorola_nexus6_cpu" translatable="false">Qualcomm Snapdragon 805 2.7GHz quad-core</string>
+    <string name="motorola_xt1021_cpu" translatable="false">Qualcomm Snapdragon 200 with 1.2 GHz dual-core</string>
+    <string name="motorola_xt1022_cpu" translatable="false">Qualcomm Snapdragon 200 with 1.2 GHz dual-core</string>
+    <string name="motorola_xt1025_cpu" translatable="false">Qualcomm Snapdragon 200 with 1.2 GHz dual-core</string>
+    <string name="motorola_xt1032_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1032_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1033_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1033_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1034_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1034_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1039_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1039_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1040_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1040_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1042_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1042_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1045_cf" translatable="false">1.3</string>
+    <string name="motorola_xt1045_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1063_cf" translatable="false">2</string>
+    <string name="motorola_xt1063_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1064_cf" translatable="false">2</string>
+    <string name="motorola_xt1064_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1068_cf" translatable="false">2</string>
+    <string name="motorola_xt1068_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1069_cf" translatable="false">2</string>
+    <string name="motorola_xt1069_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1072_cf" translatable="false">2</string>
+    <string name="motorola_xt1072_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1077_cf" translatable="false">2</string>
+    <string name="motorola_xt1077_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1078_cf" translatable="false">2</string>
+    <string name="motorola_xt1078_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1079_cf" translatable="false">2</string>
+    <string name="motorola_xt1079_cpu" translatable="false">Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="motorola_xt1526_cf" translatable="false">0.3</string>
+    <string name="motorola_xt1526_cpu" translatable="false">Qualcomm Snapdragon 410 with 1.2 GHz Quad-core</string>
+    <string name="motorola_xt1528_cf" translatable="false">0.3</string>
+    <string name="motorola_xt1528_cpu" translatable="false">Qualcomm Snapdragon 410 with 1.2 GHz Quad-core</string>
+    <string name="motorola_xt1540_cf" translatable="false">5</string>
+    <string name="motorola_xt1540_cpu" translatable="false">Qualcomm Snapdragon 410 64-bit Quad-core 1.4 GHz</string>
+    <string name="motorola_xt1548_cf" translatable="false">5</string>
+    <string name="motorola_xt1548_cpu" translatable="false">Qualcomm Snapdragon 410 64-bit Quad-core 1.4 GHz</string>
+    <string name="motorola_xt1562_cf" translatable="false">5</string>
+    <string name="motorola_xt1562_cpu" translatable="false">Qualcomm Snapdragon 615 Quad-core 1.7 GHz and Quad-core 1.0 GHz</string>
+    <string name="motorola_xt1563_cf" translatable="false">5</string>
+    <string name="motorola_xt1563_cpu" translatable="false">Qualcomm Snapdragon 615 Quad-core 1.7 GHz and Quad-core 1.0 GHz</string>
+    <string name="msm8939">Octa-core MSM8939 Snapdragon 615</string>
+    <string name="msm8939cls">1.7 GHz quad-core Cortex-A53 and 1.0 GHz quad-core Cortex-A53</string>
+    <string name="msm8939v2">Octa-core MSM8939v2 Snapdragon 616</string>
+    <string name="msm8939v2cls">1.7 GHz quad-core Cortex-A53 and 1.2 GHz quad-core Cortex-A53</string>
+    <string name="msm8956">Hexa-core MSM8956 Snapdragon 650</string>
+    <string name="msm8956cls">1.8 GHz dual-core Cortex-A72 and 1.4 GHz quad-core Cortex-A53</string>
+    <string name="msm8976">Octa-core MSM8976 Snapdragon 652</string>
+    <string name="msm8976cls">1.8 GHz quad-core Cortex-A72 and 1.4 GHz quad-core Cortex-A53</string>
+    <string name="msm8992">Hexa-core MSM8992 Snapdragon 808</string>
+    <string name="msm8992cls">1.88 GHz dual-core Cortex-A57 and 1.44 GHz quad-core Cortex-A53</string>
+    <string name="msm8994">Octa-core MSM8994 Snapdragon 810</string>
+    <string name="msm8994cls">2 GHz quad-core Cortex-A57 and 1.55 GHz quad-core Cortex-A53</string>
+    <string name="msm8996">Quad-core MSM8996 Snapdragon 820</string>
+    <string name="msm8996cls">2.15 GHz dual-core Kryo and 1.59 GHz dual-core Kryo</string>
+    <string name="mt6595">Octa-core MT6595</string>
+    <string name="mt6595cls">2.2 GHz quad-core Cortex-A17 and 1.5 GHz quad-core Cortex-A7</string>
+    <string name="mt6595m">Octa-core MT6595m</string>
+    <string name="mt6595mcls">2.0 GHz quad-core Cortex-A17 and 1.5 GHz quad-core Cortex-A7</string>
+    <string name="mt6797">Deca-core MT6797</string>
+    <string name="mt6797cls">2.3 GHz dual-core ARM Cortex-A72 2.0 GHz quad-core ARM Cortex-A53 1.4 GHz quad-core ARM Cortex-A53</string>
+    <string name="mt6797t">Deca-core MT6797t</string>
+    <string name="mt6797tcls">2.5 GHz Dual-core ARM Cortex-A72 2.0 GHz quad-core ARM Cortex-A53 1.4 GHz quad-core ARM Cortex-A53</string>
+    <string name="mt8173">Octa-core MT8173</string>
+    <string name="mt8173cls">2.0 GHz Dual-core ARM Cortex-A72 1.6 GHz dual-core ARM Cortex-A53</string>
+    <string name="oneplus_a0001_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.5 GHz Krait 400</string>
+    <string name="samsung_gti9300_cpu" translatable="false">Exynos 4412 Quad-core 1.4 GHz</string>
+    <string name="samsung_gti9301i_cpu" translatable="false">Snapdragon 400 Quad-core 1.4 GHz</string>
+    <string name="samsung_gti9305_cpu" translatable="false">Exynos 4412 Quad-core 1.4 GHz</string>
+    <string name="samsung_gti9500_cpu" translatable="false">Exynos 5 Octa 5410 Octa-core (1.6 GHz Quad + 1.2 GHz Quad)</string>
+    <string name="samsung_gti9505_cpu" translatable="false">Quad-core Snapdragon 600</string>
+    <string name="samsung_gti9506_cpu" translatable="false">Quad-core Snapdragon 800</string>
+    <string name="samsung_gtn7100_cpu" translatable="false">Exynos 4412 Quad-core 1.6 GHz</string>
+    <string name="samsung_smg360h_cpu" translatable="false">Qualcomm Snapdragon 410 Quad-core 1.2 GHz</string>
+    <string name="samsung_smg530h_cpu" translatable="false">Qualcomm Snapdragon 410 Quad-core 1.2 GHz</string>
+    <string name="samsung_smg7102_cpu" translatable="false">Qualcomm Snapdragon 400 Quad-core 1.2 GHz</string>
+    <string name="samsung_smg850f_cpu" translatable="false">Exynos 5 Octa 5430 Quad-core 1.8 GHz and quad-core 1.3 GHz</string>
+    <string name="samsung_smg900a_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core</string>
+    <string name="samsung_smg900f_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core</string>
+    <string name="samsung_smg900i_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core</string>
+    <string name="samsung_smg900m_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core</string>
+    <string name="samsung_smg900t_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core</string>
+    <string name="samsung_smg900w8_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core</string>
+    <string name="samsung_smg9200_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg9208_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg9209_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920a_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920f_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920fd_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920i_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920p_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920r_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920t_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg920v_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg9250_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925a_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925f_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925i_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925k_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925l_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925p_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925r_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925t_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smg925v_cpu" translatable="false">Exynos 7420 Quad-core 1.5 GHz and Quad-core 2.1 GHz</string>
+    <string name="samsung_smn9000_cpu" translatable="false">Exynos 5 Octa 5420 Quad-core 1.9 GHz and quad-core 1.3 GHz</string>
+    <string name="samsung_smn9002_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.3 GHz Krait 400</string>
+    <string name="samsung_smn9005_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.3 GHz Krait 400</string>
+    <string name="samsung_smn9100_cpu" translatable="false">Qualcomm Snapdragon 805 Quad-core 2.7 GHz Krait 450</string>
+    <string name="samsung_smn910a_cpu" translatable="false">Qualcomm Snapdragon 805 Quad-core 2.7 GHz Krait 450</string>
+    <string name="samsung_smn910c_cpu" translatable="false">Exynos 5433 Quad-core 1.3 GHz and Quad-core 1.9 GHz</string>
+    <string name="samsung_smn910f_cpu" translatable="false">Qualcomm Snapdragon 805 Quad-core 2.7 GHz Krait 450</string>
+    <string name="samsung_smn910g_cpu" translatable="false">Qualcomm Snapdragon 805 Quad-core 2.7 GHz Krait 450</string>
+    <string name="samsung_smn910h_cpu" translatable="false">Exynos 5433 Quad-core 1.3 GHz and Quad-core 1.9 GHz</string>
+    <string name="sony_c5502_cpu" translatable="false">Qualcomm APQ8064 Snapdragon S4 Pro Quad-core 1.5 GHz Krait</string>
+    <string name="sony_c5503_cpu" translatable="false">Qualcomm APQ8064 Snapdragon S4 Pro Quad-core 1.5 GHz Krait</string>
+    <string name="sony_c6802_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core Krait 400</string>
+    <string name="sony_c6833_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core Krait 400</string>
+    <string name="sony_c6902_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.2 GHz Krait 400</string>
+    <string name="sony_c6903_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.2 GHz Krait 400</string>
+    <string name="sony_d5503_cpu" translatable="false">Qualcomm Snapdragon 800 Quad-core 2.2 GHz Krait 400</string>
+    <string name="sony_d5803_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.5 GHz Krait 400</string>
+    <string name="sony_d6502_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.3 GHz Krait 400</string>
+    <string name="sony_d6503_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.3 GHz Krait 400</string>
+    <string name="sony_d6603_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.5 GHz Krait 400</string>
+    <string name="sony_d6633_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.5 GHz Krait 400</string>
+    <string name="sony_d6653_cpu" translatable="false">Qualcomm Snapdragon 801 Quad-core 2.5 GHz Krait 400</string>
+    <string name="universal5260" translatable="false">Hexa-core Exynos 5260</string>
+    <string name="universal52600cls" translatable="false">1.7 GHz dual-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="universal5420" translatable="false">Octa-core Exynos 5420</string>
+    <string name="universal5420cls" translatable="false">1.9 GHz quad-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="universal5422" translatable="false">Octa-core Exynos 5422</string>
+    <string name="universal5422cls" translatable="false">1.9 GHz quad-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="universal5430" translatable="false">Octa-core Exynos 5430</string>
+    <string name="universal5430cls" translatable="false">1.8 GHz quad-core Cortex-A15 and 1.3 GHz quad-core Cortex-A7</string>
+    <string name="yu_ao5510_cpu" translatable="false">Qualcomm Snapdragon 615 1.5GHz Octa-core</string>
+    <string name="cpu_cores">Cores</string>
+    <string name="cpu_clock_speed">Clock Speed</string>
+    <string name="cpu_load_average">Load Average</string>
+    <string name="cpu_instruction_set">Instruction Set</string>
+    <string name="cpu_governor">CPU Governor</string>
+    <string name="cpu_java_heap">CPU Governor</string>
+    // gpu
+    <string name="gpu_info">GPU</string>
+    <string name="gpu_renderer">GPU Renderer</string>
+    <string name="gpu_vendor">GPU Vendor</string>
+    <string name="gpu_version">GPU Version</string>
+    <string name="gpu_more_detail">More Detail</string>
+    //high
+    <string name="gpu_viewport_size">Viewport Size</string>
+    <string name="gpu_renderbuffer_size">Renderbuffer Size</string>
+    <string name="gpu_cubemap_size">Cubemap Size</string>
+    <string name="gpu_texture_size">Textture Size</string>
+    <string name="gpu_texture_units">Textture Units</string>
+    <string name="gpu_vertex_textures">Vertex Textures</string>
+    <string name="gpu_combined_textures">Combined Textures</string>
+    <string name="gpu_vertex_attributes">Vertex Attributes</string>
+    <string name="gpu_vertex_uniforms">Vertex Uniforms</string>
+    <string name="gpu_varying_vectors">Varying Vectors</string>
+    <string name="gpu_fragment_uniform_vectors">Fragment Uniform Vectors</string>
+    // low
+    <string name="gpu_viewport_dimension">Viewport Dimension</string>
+    <string name="gpu_texture_stack_depth">Texture Stack Depth</string>
+    <string name="gpu_depth_bits">Depth Bits</string>
+    <string name="gpu_depth_buffer_bit">Depth Buffer Bit</string>
+    <string name="gpu_luminance">Luminance</string>
+    <string name="gpu_luminance_alpha">Luminance Alpha</string>
+    <string name="gpu_max_lights">Max Lights</string>
+    <string name="gpu_modelview_stack_depth">Modelview Stack Depth</string>
+    <string name="gpu_projection_stack_depth">Projection Stack Depth</string>
+    <string name="gpu_elements_indices">Elements Indices</string>
+    <string name="gpu_elements_vertices">Elements Vertices</string>
+    <string name="gpu_extensions">GPU Extensions</string>
+    // system
+    <string name="system_info">System</string>
+    // android
+    <string name="android_info">Android</string>
+    <string name="android_version_name">Android Version Name</string>
+    <string name="android_version_code">Android Version Code</string>
+    <string name="android_bootloader">Bootloader</string>
+    <string name="android_build_fingerprint">Build Fingerprint</string>
+    <string name="android_build_id">Build ID</string>
+    <string name="android_build_time">Build Time</string>
+    <string name="android_code_name">Code Name</string>
+    <string name="android_incremental">Incremental</string>
+    <string name="android_opengl_es">OpenGL ES</string>
+    <string name="android_opengl_version">OpenGL Version</string>
+    <string name="android_platform_version">Platform Version</string>
+    <string name="android_ril_version">RIL Version</string>
+    <string name="android_sdk_version">SDK Version</string>
+    <string name="android_system_encoding">System Encoding</string>
+    <string name="android_system_language">System Language</string>
+    <string name="android_system_os_version">System OS Version</string>
+    <string name="android_system_region">System Region</string>
+    // jvm
+    <string name="jvm_info">JVM</string>
+    <string name="jvm_version">JVM Version</string>
+    <string name="jvm_java_class_version">Java Class Version</string>
+    <string name="jvm_java_home">Java Home</string>
+    <string name="jvm_java_vendor">Java Vendor</string>
+    <string name="jvm_java_vm">Java VM</string>
+    <string name="jvm_specification">JVM Specification</string>
+    <string name="jvm_specification_version">JVM Specification Version</string>
+    // device
+    <string name="device_info">Device</string>
+    <string name="device_android_id">Android ID</string>
+    <string name="device_board">Board</string>
+    <string name="device_brand">Brand</string>
+    <string name="device_build_time">Build Time</string>
+    <string name="device_cpu_abi">CPU ABI</string>
+    <string name="device_cpu_abi_2">CBU ABI 2</string>
+    <string name="device_device">Device</string>
+    <string name="device_device_serial">Device Serial</string>
+    <string name="device_display">Display</string>
+    <string name="device_hardware">Hardware</string>
+    <string name="device_host">Host</string>
+    <string name="device_icc_card">ICC Card</string>
+    <string name="device_icc_card_exist">exist</string>
+    <string name="device_icc_card_not_exist">not exist</string>
+    <string name="device_imei">IMEI</string>
+    <string name="device_kernel">Kernel</string>
+    <string name="device_manufacturer">Manufacturer</string>
+    <string name="device_model">Model</string>
+    <string name="device_product">Product</string>
+    <string name="device_phone_number">Phone Number</string>
+    <string name="device_release">Release</string>
+    <string name="device_root">Root</string>
+    <string name="device_rooted">Granted</string>
+    <string name="device_root_not">Not Granted</string>
+    <string name="device_sim_serial">SIM Serial</string>
+    <string name="device_subcriber_id">Subcriber ID</string>
+    <string name="device_tags">Tags</string>
+    <string name="device_type">Type</string>
+    <string name="device_uptime">Uptime</string>
+    <string name="device_user">User</string>
+    // wifi
+    <string name="wifi_info">Wifi</string>
+    <string name="wifi_signal">Wifi Signal</string>
+    <string name="wifi_signal_not_connected">Not Connected</string>
+    <string name="wifi_strong">strong</string>
+    <string name="wifi_normal">normal</string>
+    <string name="wifi_week">week</string>
+    <string name="wifi_name">Wifi Name</string>
+    <string name="wifi_ip_address">IP Address</string>
+    <string name="wifi_ip_address_unknow">0.0.0.0</string>
+    <string name="wifi_speed">Wifi Speed</string>
+    <string name="wifi_mac_address">Wifi MAC address</string>
+    // network
+    <string name="sim_info">SIM</string>
+    <string name="network_signal">Signal</string>
+    <string name="network_signal_strong">strong</string>
+    <string name="network_signal_normal">normal</string>
+    <string name="network_signal_weak">weak</string>
+    <string name="network_base_band">Base Band</string>
+    <string name="network_country">Network Country</string>
+    <string name="network_network_type">Network Type</string>
+    <string name="network_network_type_not_connected">Not connected</string>
+    <string name="network_network_type_wifi">Wifi</string>
+    <string name="network_network_type_2g_gprs">2G (GPRS)</string>
+    <string name="network_network_type_2g_edge">2G (EDGE)</string>
+    <string name="network_network_type_2g_cdma">2G (CDMA)</string>
+    <string name="network_network_type_2g_1xrtt">2G (1xRTT)</string>
+    <string name="network_network_type_2g_iden">2G (IDEN)</string>
+    <string name="network_network_type_3g_umts">3G (UMTS)</string>
+    <string name="network_network_type_3g_evdo_0">3G (EVDO 0)</string>
+    <string name="network_network_type_3g_evdo_a">3G (EVDO A)</string>
+    <string name="network_network_type_3g_hsdpa">3G (HSDPA)</string>
+    <string name="network_network_type_3g_hsupa">3G (HSUPA)</string>
+    <string name="network_network_type_3g_hspa">3G (HSPA)</string>
+    <string name="network_network_type_3g_evdo_b">3G (EVDO B)</string>
+    <string name="network_network_type_3g_ehrpd">3G (EHRPD)</string>
+    <string name="network_network_type_3g_hspap">3G (HSPAP)</string>
+    <string name="network_network_type_4g">4G</string>
+    <string name="network_operator_id">Operator ID</string>
+    <string name="network_operator_name">Operator Name</string>
+    <string name="network_phone_type">Phone Type</string>
+    <string name="network_phone_type_none">NONE</string>
+    <string name="network_phone_type_gsm">GSM</string>
+    <string name="network_phone_type_cdma">CDMA</string>
+    <string name="network_phone_type_sip">SIP</string>
+    <string name="network_service_mode">Service Mode</string>
+    <string name="network_service_mode_manual">Manual</string>
+    <string name="network_service_mode_automatic">Automatic</string>
+    <string name="network_sim">SIM</string>
+    <string name="network_sim_absent">SIM Card Is Absent</string>
+    <string name="network_sim_network_locked">SIM Card Is Locked</string>
+    <string name="network_sim_pin_required">PIN Code</string>
+    <string name="network_sim_puk_required">PUK Code</string>
+    <string name="network_sim_ready">SIM Card Is Ready</string>
+    <string name="network_sim_serial">SIM Serial</string>
+    // battery
+    <string name="battery_info">Battery</string>
+    <string name="battery_level">Battery Level</string>
+    <string name="battery_capacity">Battery Capacity</string>
+    <string name="battery_health">Battery Health</string>
+    <string name="battery_health_one">Unknow</string>
+    <string name="battery_health_two">Good</string>
+    <string name="battery_health_three">Overheat</string>
+    <string name="battery_health_four">Dead</string>
+    <string name="battery_health_five">Over Voltage</string>
+    <string name="battery_health_six">Unspecified Failure</string>
+    <string name="battery_health_seven">COLD</string>
+    <string name="battery_power_source">Power Source</string>
+    <string name="battery_power_source_one">Plugged AC</string>
+    <string name="battery_power_source_two">Plugged USB</string>
+    <string name="battery_power_source_four">Plugged Wireless</string>
+    <string name="battery_status">Battery Status</string>
+    <string name="battery_status_one">Unknow</string>
+    <string name="battery_status_two">Charging</string>
+    <string name="battery_status_three">Discharging</string>
+    <string name="battery_status_four">Not Charging</string>
+    <string name="battery_status_five">Fully Charged</string>
+    <string name="battery_technology">Battery Technology</string>
+    <string name="battery_temp">Battery Temperature</string>
+    <string name="battery_voltage">Battery Voltage</string>
+    // screen
+    <string name="screen_info">Screen</string>
+    <string name="screen_brightness">Brightness</string>
+    <string name="screen_density">Density</string>
+    <string name="screen_density_type">Density Type</string>
+    <string name="screen_dimensions">Dimensions</string>
+    <string name="screen_orientation">Orientation</string>
+    <string name="screen_orientation_zero">Undefined</string>
+    <string name="screen_orientation_one">Portrait</string>
+    <string name="screen_orientation_two">Landscape</string>
+    <string name="screen_pixel_image_format">Pixel/Image Format</string>
+    <string name="screen_refresh_rate">Refresh Rate</string>
+    <string name="screen_resolution">Resolution</string>
+    <string name="screen_size">Screen Size</string>
+    <string name="screen_size_type">Size Type</string>
+    <string name="screen_size_type_small">Small</string>
+    <string name="screen_size_type_normal">Normal</string>
+    <string name="screen_size_type_large">Large</string>
+    <string name="screen_size_type_xlarge">xLarge</string>
+    // camera
+    <string name="camera_info">Camera</string>
+    <string name="no_camera">Your Smartphone Have\nNo Camera</string>
+    <string name="camera_type_back">Camera Back</string>
+    <string name="camera_type_front">Camera Front</string>
+    <string name="camera_orientation">Orientation</string>
+    <string name="camera_antibanding">Antibanding</string>
+    <string name="camera_auto_exposure_lock">Auto Exposure Lock</string>
+    <string name="camera_auto_white_balance_lock">Auto White Balance Lock</string>
+    <string name="camera_color_effect">Color Effect</string>
+    <string name="camera_exposure_compensation">Exposure Compensation</string>
+    <string name="camera_exposure_compensation_step">Exposure Compensation Step</string>
+    <string name="camera_flash_mode">FlashMode</string>
+    <string name="camera_focal_length">Focal Length</string>
+    <string name="camera_max_num_focus_areas">Max Num Focus Areas</string>
+    <string name="camera_focus_distances">Focus Distances</string>
+    <string name="camera_focus_distances_near_index">\tNear Index</string>
+    <string name="camera_focus_distances_far_index">\tFar Index</string>
+    <string name="camera_focus_distances_optimal_index">\tOptimal Index</string>
+    <string name="camera_focus_mode">Focus Mode</string>
+    <string name="camera_horizontal_view_angle">Horizontal View Angle</string>
+    <string name="camera_jpeg_quality">Jpeg Quality</string>
+    <string name="camera_jpeg_thumbnail_quality">Jpeg Thumbnail Quality</string>
+    <string name="camera_jpeg_thumbnail_size">Jpeg Thumbnail Size</string>
+    <string name="camera_max_exposure_compensation">Max Exposure Compensation</string>
+    <string name="camera_max_num_detected_faces">Max Num Detected Faces</string>
+    <string name="camera_max_num_metering_areas">Max Num Metering Areas</string>
+    <string name="camera_max_zoom">Max Zoom</string>
+    <string name="camera_min_exposure_compensation">Min Exposure Compensation</string>
+    <string name="camera_picture_format">Picture Format</string>
+    <string name="camera_picture_size">Picture Size</string>
+    <string name="camera_preferred_preview_size_for_video">Preferred Preview Size For Video</string>
+    <string name="camera_preview_format">Preview Format</string>
+    <string name="camera_preview_fps_range">Preview Fps Range</string>
+    <string name="camera_preview_fps_range_min_index">\tMin Index</string>
+    <string name="camera_preview_fps_range_max_index">\tMax Index</string>
+    <string name="camera_deprecated_preview_frame_rate">[DEPRECATED] Preview Frame Rate</string>
+    <string name="camera_preview_size">Preview Size</string>
+    <string name="camera_scene_mode">Scene Mode</string>
+    <string name="camera_supported_antibanding">Supported Antibanding</string>
+    <string name="camera_supported_color_effect">Supported ColorEffect</string>
+    <string name="camera_supported_flash_mode">Supported Flash Mode</string>
+    <string name="camera_supported_jpeg_thumbnail_size">Supported Jpeg Thumbnail Size</string>
+    <string name="camera_supported_picture_format">Supported Picture Format</string>
+    <string name="camera_supported_picture_size">Supported Picture Size</string>
+    <string name="camera_supported_preview_format">Supported Preview Format</string>
+    <string name="camera_supported_preview_fps_range_min_max">Supported Preview FPS RANGE[MIN, MAX]</string>
+    <string name="camera_supported_preview_frame_rate">Supported Preview Frame Rate</string>
+    <string name="camera_supported_preview_size">Supported Preview Size</string>
+    <string name="camera_supported_scene_mode">Supported Scene Mode</string>
+    <string name="camera_supported_video_size">Supported Video Size</string>
+    <string name="camera_supported_white_balance">Supported White Balance</string>
+    <string name="camera_vertical_view_angle">Vertical View Angle</string>
+    <string name="camera_video_stabilization">Video Stabilization</string>
+    <string name="camera_white_balance">White Balance</string>
+    <string name="camera_zoom">Zoom</string>
+    <string name="camera_zoom_ratios">Zoom Ratios</string>
+    <string name="camera_auto_exposure_lock_supported">Auto Exposure Lock Supported</string>
+    <string name="camera_auto_white_balance_lock_supported">Auto White Balance Lock Supported</string>
+    <string name="camera_smooth_zoom_supported">Smooth Zoom Supported</string>
+    <string name="camera_video_snapshot_supported">Video Snapshot Supported</string>
+    <string name="camera_video_stabilization_supported">Video Stabilization Supported</string>
+    <string name="camera_zoom_supported">Zoom Supported</string>
+    <string name="camera_parameter_flatten_string">Parameter\'s flatten String</string>
+    // memory
+    <string name="memory_info">Memory</string>
+    <string name="memory_ram">Ram</string>
+    <string name="memory_ram_free">Free Ram</string>
+    <string name="memory_ram_total">Total Ram</string>
+    <string name="memory_rom">Storage</string>
+    <string name="memory_rom_free">Free Storage</string>
+    <string name="memory_rom_total">Total Storage</string>
+    // sensors
+    <string name="sensors_info">Sensors</string>
+    <string name="sensor_type_accelerometer">Accelerometer</string>
+    <string name="sensor_type_all">All</string>
+    <string name="sensor_type_ambient_temperature">Ambient Temperature</string>
+    <string name="sensor_type_game_rotation_vector">Game Rotation Vector</string>
+    <string name="sensor_type_geomagnetic_rotation_vector">Geomagnetic Rotation Vector</string>
+    <string name="sensor_type_gravity">Gravity</string>
+    <string name="sensor_type_gyroscope">Gyroscope</string>
+    <string name="sensor_type_gyroscope_uncalibrated">Gyroscope Uncalibrated</string>
+    <string name="sensor_type_heart_rate">Heart Rate</string>
+    <string name="sensor_type_light">Light</string>
+    <string name="sensor_type_linear_acceleration">Linear Acceleration</string>
+    <string name="sensor_type_magnetic_field">Magnetic Field</string>
+    <string name="sensor_type_magnetic_field_uncalibrated">Magnetic Field Uncalibrated</string>
+    <string name="sensor_type_orientation">Orientation</string>
+    <string name="sensor_type_pressure">Pressure</string>
+    <string name="sensor_type_proximity">Proximity</string>
+    <string name="sensor_type_relative_humidity">Relative Humidity</string>
+    <string name="sensor_type_rotation_vector">Rotation Vector</string>
+    <string name="sensor_type_significant_motion">Significant Motion</string>
+    <string name="sensor_type_step_counter">Step Counter</string>
+    <string name="sensor_type_step_detector">Step Detector</string>
+    <string name="sensor_type_temperature">Temperature</string>
+    <string name="sensor_that_device_not_support">Sorry, your device hardware does not support this sensor!</string>
+
+    // unknow
+    <string name="unknow">Unknown</string>
+    <string name="none">None</string>
+    // clipboard
+    <string name="copy_text_to_clipboard">Copied Clipboard:</string>
+
+
+</resources>

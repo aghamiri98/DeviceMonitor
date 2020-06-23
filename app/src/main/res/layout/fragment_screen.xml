@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/screen"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgLogo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnrBrithnes"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtBrithnesValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider01"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtBrithnesName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="میزان روشنایی"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemBrithnes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_brightness"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDensity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeensityValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider02"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDensityName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="چگالی"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDensity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_density"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrDensityType"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDeensityTypeValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider03"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDensityTypeName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="نوع چگالی"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemDensityType"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_density_type"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrResolution"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtResolutionValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider04"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtResolution"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="رزولوشن"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemResolution"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_mobile_resolution"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrscreenSize"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtScreenSizeValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider05"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtScreenSizeName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="سایز صفحه نمایش"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemScreenSize"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_screen_size"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

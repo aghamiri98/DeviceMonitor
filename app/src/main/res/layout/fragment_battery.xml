@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/battery"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgLogo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnrChargeLevel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtchargeValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider01"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtChargeName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="میزان شارژ"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgCharge"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_charge"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtCapacityValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider02"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtCapacityName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ظرفیت باطری"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemCapacity"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_capacity"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrHealth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtHealthValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider03"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtHealthName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="وضعیت سلامت"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemHealth"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_health"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrStatus"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtStatusValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider04"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtStatusName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="وضعیت"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemStatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_status"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrTechnology"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTechnologyValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider05"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTechnologyName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="تکنولوژی ساخت"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemTechnology"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_technology"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrTemp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTempValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider06"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTempName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="دمای باطری"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemTemp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_temp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrVoltage"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtVoltageValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider07"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtVoltageName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ولتاژ"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemVoltage"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_voltage"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrPower"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtPowerValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider08"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtPowerName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="منبع تغذیه"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemPower"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_battery_power"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

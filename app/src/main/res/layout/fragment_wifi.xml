@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/wifi"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgLogo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnrWifiName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtWifiNameValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider01"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtWifiNameName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="نام وای فای"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgWifiName"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_wifi"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrIPAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtIPAddressValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider02"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtIPAddressName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="آدرس آی پی"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemIPAddress"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_ip_adress"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrWifiMACAddress"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtMACAddressValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider03"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtMACAddressName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="مک آدرس وای فای"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemMACAddress"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_mac_adress"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

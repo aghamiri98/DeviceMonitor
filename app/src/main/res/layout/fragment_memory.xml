@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/standard_margin"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/memory"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imgLogo">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnrTotalRam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTotalRamValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider01"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTotalRamName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="کل ظرفیت رم"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgTotalRam"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_total_ram_memory"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrFreeRam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtFreeRamValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider02"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtFreeRamName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ظرفیت آزاد رم"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemFreeRam"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_free_ram_memory"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrTotalRom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTotalRomValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider03"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtTotalRomName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="کل ظرفیت حافظه"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemTotalRom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_total_memory"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnrFreeRom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/very_low_margin">
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtFreeRomValue"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="---"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtDivider04"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=":"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"/>
+
+                <com.aghamiri.devicemonitor.AutoResizeTextView
+                    android:id="@+id/txtFreeRomName"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="ظرفیت آزاد حافظه"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+
+                <ImageView
+                    android:id="@+id/imgItemFreeRom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/ic_free_memory"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

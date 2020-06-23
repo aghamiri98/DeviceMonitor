@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cpu_model">
+        <item>msm8939v2</item>
+        <item>msm8939</item>
+        <item>msm8956</item>
+        <item>msm8974</item>
+        <item>msm8976</item>
+        <item>msm8992</item>
+        <item>msm8994</item>
+        <item>msm8996</item>
+        <item>mt6595m</item>
+        <item>mt6595</item>
+        <item>mt6797t</item>
+        <item>mt6797</item>
+        <item>mt8173</item>
+        <item>exynos8890</item>
+        <item>exynos7420</item>
+        <item>exynos5433</item>
+        <item>exynos5430</item>
+        <item>universal5430</item>
+        <item>exynos5422</item>
+        <item>universal5422</item>
+        <item>exynos5420</item>
+        <item>universal5420</item>
+        <item>exynos5260</item>
+        <item>universal5260</item>
+    </string-array>
+
+
+</resources>
